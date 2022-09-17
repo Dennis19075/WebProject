@@ -1,0 +1,15 @@
+{% extends "WebProjectApp/base.html" %}
+
+{% block content %}
+    <h1 style="color: white;">Contact</h1>
+
+    <div class="FormContainer">
+        <form action="" method="POST" style="text-align: center;">
+            {% csrf_token %}
+            <table style="margin: 20px auto;">
+                {{form.as_table}}
+            </table>
+            <input style="width: 25%;" type="submit" class="btn btn-primary" value="Submit">
+        </form>
+    </div>
+{% endblock %}

@@ -12,9 +12,3 @@ def home(request):
 def store(request):
 
     return render(request, "WebProjectApp/store.html")
-
-
-
-def contact(request):
-
-    return render(request, "WebProjectApp/contact.html")

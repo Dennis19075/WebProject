@@ -21,6 +21,7 @@ urlpatterns = [
     # Import service app
     path('services/', include('servicios.urls')),
     path('blog/', include('blog.urls')),
+    path('contacto/', include('contacto.urls')),
     #Import urls webapp
     path('', include('WebProjectApp.urls')),
 ]
