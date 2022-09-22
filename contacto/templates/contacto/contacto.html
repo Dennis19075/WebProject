@@ -4,6 +4,18 @@
     <h1 style="color: white;">Contact</h1>
 
     <div class="FormContainer">
+        {% if "valido" in request.GET %}
+        <div class="alert alert-success" role="alert">
+            Message sent successfully
+        </div>
+            
+        {% endif %}
+        {% if "no_valido" in request.GET %}
+        <div class="alert alert-danger" role="alert">
+            Error sending the email
+        </div>
+            
+        {% endif %}
         <form action="" method="POST" style="text-align: center;">
             {% csrf_token %}
             <table style="margin: 20px auto;">
