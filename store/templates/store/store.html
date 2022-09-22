@@ -1,0 +1,27 @@
+{% extends "WebProjectApp/base.html" %}
+
+{% block content %}
+<h1 style="color: white; padding: 1em;">Store</h1>
+
+<div class="container">
+    <div class="row">
+        {% for product in products %}
+            {% if product.available == True %}
+            <div class="col-md-4">
+                    <div class="card" style="width: 60%; margin-top: 5px 5px;">
+                        <img class="card-img-top" src="{{product.image.url}}" alt="product_image">
+                        <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">{{product.name}}</h5>
+                        <p class="card-text">{{product.categories}}</p>
+                        <p class="card-text">{{product.price}} €</p>
+                        <a href="#" class="btn btn-success">Go to the product</a>
+                        </div>
+                    </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
+

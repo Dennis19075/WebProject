@@ -1,6 +1,6 @@
 body {
   font-family: 'Lora';
-  background-color: rgb(111, 188, 255);
+  background-color: rgb(255, 255, 255);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -134,7 +134,7 @@ p {
     left: 600;
     width: 60%;
     margin-top: 3rem;
-    background-color: #004e9f;
+    background-color: #ffffff;
     color: cornsilk;
     position: absolute;
   }
@@ -162,7 +162,7 @@ p {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: #004e9f;
+  background-color: #ffffff;
   color: cornsilk;
 }
 
@@ -279,7 +279,7 @@ ul.errorlist{
 }
 
 .FormContainer {
-  background-color: rgb(176, 218, 255);
+  background-color: rgb(255, 255, 255);
   width: 50%;
   margin: 10px auto;
   border-radius: 5px;

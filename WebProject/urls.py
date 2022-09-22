@@ -22,6 +22,7 @@ urlpatterns = [
     path('services/', include('servicios.urls')),
     path('blog/', include('blog.urls')),
     path('contacto/', include('contacto.urls')),
+    path('store/', include('store.urls')),
     #Import urls webapp
     path('', include('WebProjectApp.urls')),
 ]
