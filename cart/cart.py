@@ -34,7 +34,7 @@ class Cart:
             del self.cart[product.id]
             self.saveCart()
     
-    def restProduct(self, product):
+    def subtractProduct(self, product):
         for key, value in self.cart.items():
             if key==str(product.id):
                 value["product_amount"] = value["product_amount"]-1
